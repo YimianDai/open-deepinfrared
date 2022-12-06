@@ -59,7 +59,11 @@ For your convenience, we provide the following trained models.
 
 Model | mNoCoAP | Config | Log | GFLOPS | Download
 --- |:---:|:---:|:---:|:---:|:---:
-faster_rcnn_r50_fpn_1x | 0.7141 | [config](https://raw.githubusercontent.com/YimianDai/deepinfrared-files/master/faster_rcnn_r50_fpn_1x_sirst_0_7141/faster_rcnn_r50_fpn_1x_sirst.py) | [log](https://raw.githubusercontent.com/YimianDai/deepinfrared-files/master/faster_rcnn_r50_fpn_1x_sirst_0_7141/20221201_041954.log) | | [baidu (dv7b)](https://pan.baidu.com/s/1fzgl2kJbcve4LC6tklGMYA?pwd=dv7b) 
+faster_rcnn_r50_fpn_1x | 0.7141 | [config](https://raw.githubusercontent.com/YimianDai/deepinfrared-files/master/faster_rcnn_r50_fpn_1x_sirst_0_7141/faster_rcnn_r50_fpn_1x_sirst.py) | [log](https://raw.githubusercontent.com/YimianDai/deepinfrared-files/master/faster_rcnn_r50_fpn_1x_sirst_0_7141/20221201_041954.log) | | [baidu](https://pan.baidu.com/s/1fzgl2kJbcve4LC6tklGMYA?pwd=dv7b)
+oscar_r18_fpn_p2_256_1x | 0.8502 | [config](https://raw.githubusercontent.com/YimianDai/deepinfrared-files/master/oscar_w_noco_head_r18_caffe_fpn_p2_gn-head_1x_sirst_det2noco_0_8502/oscar_w_noco_head_r18_caffe_fpn_p2_gn-head_1x_sirst_det2noco.py) | [log](https://raw.githubusercontent.com/YimianDai/deepinfrared-files/master/oscar_w_noco_head_r18_caffe_fpn_p2_gn-head_1x_sirst_det2noco_0_8502/20221201_145722.log) | 68.32 | [baidu](https://pan.baidu.com/s/1JD5-6sb8Y-0tzOsGyzxebQ?pwd=pdj5)
+
+
+<!-- oscar_r18_fpn_p2_128_1x | 0.8352 | [config]() | [log]() | 25.36 | [baidu ()]() -->
 
 
 ## FAQ
