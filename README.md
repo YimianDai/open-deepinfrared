@@ -1,4 +1,4 @@
-# open-deepinfrared
+# DeepInfrared
 
 ## SIRST-V2 Dataset
 

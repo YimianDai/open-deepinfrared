@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - name: "Yimian Dai"
+title: "DeepInfrared Toolbox and Benchmark"
+date-released: 2021-xx-yy
+url: "https://github.com/YimianDai/deepinfrared"
+license: Apache-2.0

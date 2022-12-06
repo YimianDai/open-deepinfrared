@@ -1,0 +1,6 @@
+include requirements/*.txt
+include deepir/VERSION
+include deepir/.mim/model-index.yml
+include deepir/.mim/demo/*/*
+recursive-include deepir/.mim/configs *.py *.yml
+recursive-include deepir/.mim/tools *.sh *.py

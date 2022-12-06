@@ -1,0 +1,2 @@
+from .oscar_w_noco_head import OSCARNoCoHead
+from .oscar_w_centerness_head import OSCARCenternessHead
