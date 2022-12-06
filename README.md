@@ -57,10 +57,12 @@ python tools/test_det.py \
 
 For your convenience, we provide the following trained models.
 
+Model | mNoCoAP | Config | Log | GFLOPS | Download
+--- |:---:|:---:|:---:|:---:|:---:
+faster_rcnn_r50_fpn_1x | 0.7141 | [config](https://raw.githubusercontent.com/YimianDai/deepinfrared-files/master/faster_rcnn_r50_fpn_1x_sirst_0_7141/faster_rcnn_r50_fpn_1x_sirst.py) | [log](https://raw.githubusercontent.com/YimianDai/deepinfrared-files/master/faster_rcnn_r50_fpn_1x_sirst_0_7141/20221201_041954.log) | | [baidu (dv7b)](https://pan.baidu.com/s/1fzgl2kJbcve4LC6tklGMYA?pwd=dv7b) 
+
 
 ## FAQ
-
-## Contributing
 
 ## Acknowledgement
 
