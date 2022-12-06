@@ -31,7 +31,32 @@ Please refer to [Installation]() for installation instructions.
 
 ### Getting Started
 
+#### Train
+
+```shell
+# assume that you are under the root directory of this project,
+# and you have activated your virtual environment if needed.
+# and with SIRST-V2 dataset in 'data/sirst/'
+
+python tools/train_det.py \
+    configs/oscar/sota/oscar_w_noco_head_r18_caffe_fpn_p2_gn-head_1x_sirst_det2noco.py \
+    --gpu-id 0 \
+    --work-dir work_dirs/oscar_w_noco_head_r18_caffe_fpn_p2_gn-head_1x_sirst_det2noco
+
+```
+
+#### Inference
+
+```shell
+python tools/test_det.py \
+    configs/oscar/sota/oscar_w_noco_head_r18_caffe_fpn_p2_gn-head_1x_sirst_det2noco.py \
+    work_dirs/oscar_w_noco_head_r18_caffe_fpn_p2_gn-head_1x_sirst_det2noco/best.pth --eval "mNoCoAP"
+```
+
 ### Overview of Benchmark and Model Zoo
+
+For your convenience, we provide the following trained models.
+
 
 ## FAQ
 
