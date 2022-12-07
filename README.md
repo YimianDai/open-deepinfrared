@@ -27,7 +27,7 @@ The dataset can be downloaded [here](https://github.com/YimianDai/open-sirst-v2)
 
 ### Installation
 
-Please refer to [Installation]() for installation instructions.
+Please refer to [Installation](https://github.com/YimianDai/open-deepinfrared/blob/master/docs/INSTALL.md) for installation instructions.
 
 ### Getting Started
 
