@@ -2,7 +2,7 @@
 
 **This page is under construction, not finished yet.**
 
-DeepInfrared aims to be a research benchmark for infrared small target detection, consisting of:
+DeepInfrared aims to be an open benchmark for infrared small target detection, currently consisting of:
 
 1. Public infrared small target dataset (SIRST-V2);
 2. Evaluation metrics specially designed (mNoCoAP);
@@ -63,10 +63,6 @@ faster_rcnn_r50_fpn_1x | 0.7141 | [config](https://raw.githubusercontent.com/Yim
 fcos_rfla_r50_kld_1x | 0.7882 | [config](https://raw.githubusercontent.com/YimianDai/deepinfrared-files/master/fcos_rfla_r50_kld_1x_0_7882/sirstv2_fcos_rfla_r50_kld_1x.py) | [log](https://raw.githubusercontent.com/YimianDai/deepinfrared-files/master/fcos_rfla_r50_kld_1x_0_7882/20221126_152729.log) | | [baidu](https://pan.baidu.com/s/1-JU-CA5a7FmEr0TRvXgh5Q?pwd=7gu6)
 oscar_r18_fpn_p2_128_1x | 0.8352 | [config](https://raw.githubusercontent.com/YimianDai/deepinfrared-files/master/oscar_w_noco_head_r18_caffe_fpn_p2_128_gn-head_1x_sirst_det2noco_0_8352/oscar_w_noco_head_r18_caffe_fpn_p2_128_gn-head_1x_sirst_det2noco.py) | [log](https://raw.githubusercontent.com/YimianDai/deepinfrared-files/master/oscar_w_noco_head_r18_caffe_fpn_p2_128_gn-head_1x_sirst_det2noco_0_8352/20221203_034804.log) | 25.36 | [baidu](https://pan.baidu.com/s/1y5jQGZbPiPFm-FPvBydSCQ?pwd=rwyk)
 oscar_r18_fpn_p2_256_1x | 0.8502 | [config](https://raw.githubusercontent.com/YimianDai/deepinfrared-files/master/oscar_w_noco_head_r18_caffe_fpn_p2_gn-head_1x_sirst_det2noco_0_8502/oscar_w_noco_head_r18_caffe_fpn_p2_gn-head_1x_sirst_det2noco.py) | [log](https://raw.githubusercontent.com/YimianDai/deepinfrared-files/master/oscar_w_noco_head_r18_caffe_fpn_p2_gn-head_1x_sirst_det2noco_0_8502/20221201_145722.log) | 68.32 | [baidu](https://pan.baidu.com/s/1JD5-6sb8Y-0tzOsGyzxebQ?pwd=pdj5)
-
-
-
-
 
 ## FAQ
 
