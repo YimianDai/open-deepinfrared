@@ -70,7 +70,11 @@ Method | mNoCoAP | Download
 --- |:---:|:---:
 LCM | 0.207 | [baidu](https://pan.baidu.com/s/1qUMPsy_J0ayneVZYDOkLcA?pwd=xhnn)
 WLDM | 0.112 | [baidu](https://pan.baidu.com/s/1l8GvdxYerdAhBAVtT51vsA?pwd=nxn7)
-
+FKRW | 0.278 | [baidu](https://pan.baidu.com/s/1rcdq9IJwMf6JbrfgM42nLQ?pwd=p9ap)
+IPI | 0.377 | [baidu](https://pan.baidu.com/s/1N2grZro5Zrh4edXuxp5QDg?pwd=v31p)
+MPCM | 0.322 | [baidu](https://pan.baidu.com/s/12L8GqgLYRjCsCkzJJLdxEw?pwd=x698)
+NIPPS | 0.335 | [baidu](https://pan.baidu.com/s/1BGudl4V6mbQbefs0R5cYVA?pwd=kijt)
+RIPT | 29.3 | [baidu](https://pan.baidu.com/s/1pDTtXKVk-HCcViPjc1YXgA?pwd=avp2)
 
 ## FAQ
 
