@@ -1,6 +1,6 @@
 # DeepInfrared
 
-**This page is under construction, not finished yet.**
+<!-- **This page is under construction, not finished yet.** -->
 
 DeepInfrared aims to be an open benchmark for infrared small target detection, currently consisting of:
 
