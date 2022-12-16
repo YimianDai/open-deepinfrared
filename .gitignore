@@ -1,4 +1,8 @@
+deepir/.mim
+
 .DS_Store
+*.DS_Store
+tools/.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,42 +1,3 @@
-"""
-python tools/test_det.py \
-    configs/faster_rcnn/faster_rcnn_r50_fpn_1x_sirst.py \
-    ~/gpu0/faster_rcnn/sirstv2/trial0/epoch_5.pth \
-    --show --show-dir /yimian/FasterRCNNFasterRCNN --gpu-id 0
-
-python tools/test_det.py \
-    configs/decoupled/topdown_reg_refine_head_r18_caffe_fpn_gn-head_1x_sirst_det2noco.py \
-    ~/gpu1/topdown_reg_refine_head/sirstv2/trial1/epoch_11.pth \
-    --work-dir /yimian \
-    --eval "mNoCoAP"
-
-python tools/test_det.py \
-    configs/decoupled/topdown_reg_refine_head_r18_caffe_fpn_gn-head_1x_sirst_det2noco.py \
-    ~/gpu1/topdown_reg_refine_head/sirstv2/trial1/epoch_11.pth \
-    --show --show-dir /yimian
-
-python tools/test_det.py \
-    configs/decoupled/topdown_reg_refine_head_r18_caffe_fpn_gn-head_1x_sirst_det2noco.py \
-    ~/gpu3/topdown_reg_refine_head/sirstv2/trial3/epoch_12.pth \
-    --show --show-dir /yimian/FasterRCNN-0.05 --gpu-id 0 --show-score-thr 0.05
-
-python tools/test_det.py \
-    configs/decoupled/oscar_head_r18_caffe_fpn_gn-head_1x_sirst_det2noco.py \
-    ~/gpu2/oscar_head/sirstv2/trial2/epoch_12.pth \
-    --show --show-dir /yimian/FCOS --gpu-id 0
-
-python tools/test_det.py \
-    configs/decoupled/oscar_w_noco_head_r18_caffe_fpn_gn-head_1x_sirst_det2noco.py \
-    /yimian/oscar_epoch_14.pth \
-    --show --show-dir /yimian/OSCAR-NoCo --gpu-id 0 --show-score-thr 0.05
-
-python tools/test_det.py configs/rfla/sirstv2_fcos_rfla_r50_kld_1x.py work_dirs/sirstv2_fcos_rfla_r50_kld_1x/epoch_11.pth --eval "mNoCoAP"
-60.7621 秒 / 256 幅图像
-
-python tools/test_det.py configs/retinanet/sirstv2_retinanet_p2_r50_fpn_1x.py work_dirs/sirstv2_retinanet_p2_r50_fpn_1x/epoch_11.pth --eval "mNoCoAP"
-65.94 秒 / 256 幅图像
-"""
-
 # Copyright (c) OpenMMLab. All rights reserved.
 import argparse
 import os
@@ -274,7 +235,6 @@ def main():
     else:
         model.CLASSES = dataset.CLASSES
 
-    start = time.time()
     if not distributed:
         model = MMDataParallel(model, device_ids=cfg.gpu_ids)
         outputs = single_gpu_test(model, data_loader, args.show, args.show_dir,
@@ -286,9 +246,6 @@ def main():
             broadcast_buffers=False)
         outputs = multi_gpu_test(model, data_loader, args.tmpdir,
                                  args.gpu_collect)
-    end = time.time()
-    for _ in range(10):
-        print(end - start)
     rank, _ = get_dist_info()
     if rank == 0:
         if args.out:
