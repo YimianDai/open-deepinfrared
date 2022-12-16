@@ -8,12 +8,24 @@ DeepInfrared aims to be an open benchmark for infrared small target detection, c
 2. Evaluation metrics specially designed (mNoCoAP);
 3. An open source toolbox based on PyTorch (DeepInfrared).
 
+## Introduction
+
+Single-frame InfraRed Small Target (SIRST) detection has been a challenging task due to a lack of inherent characteristics, imprecise bounding box regression, a scarcity of real-world datasets, and sensitive localization evaluation. In this paper, we propose a comprehensive solution to these challenges. First, we find that the existing anchor-free label assignment method is prone to mislabeling small targets as background, leading to their omission by detectors. To overcome this issue, we propose an all-scale pseudo-box-based label assignment scheme that relaxes the constraints on scale and decouples the spatial assignment from the size of the ground-truth target. Second, motivated by the structured prior of feature pyramids, we introduce the one-stage cascade refinement network (OSCAR), which uses the high-level head as soft proposals for the low-level refinement head. This allows OSCAR to process the same target in a cascade coarse-to-fine manner. Finally, we present a new research benchmark for infrared small target detection, consisting of the SIRST-V2 dataset of real-world, high-resolution single-frame targets, the normalized contrast evaluation metric, and the DeepInfrared toolkit for detection. We conduct extensive ablation studies to evaluate the components of OSCAR and compare its performance to state-of-the-art model-driven and data-driven methods on the SIRST-V2 benchmark. Our results demonstrate that a top-down cascade refinement framework can improve the accuracy of infrared small target detection without sacrificing efficiency.
+
+![](./abbr-arch.png)
+
+For details see [OSCAR](). The speed and accuracy are listed as follows:
+
+![](./oscar-tab.png)
+
 ## SIRST-V2 Dataset
 
 As a part of the DeepInfrared Eco-system, we provide the SIRST-V2 dataset as a benchmark.
 SIRST-V2 is a dataset specially constructed for single-frame infrared small target detection, in which the images are selected from thousands of infrared sequences for different scenarios.
 
-![](https://github.com/YimianDai/open-sirst-v2/blob/master/gallery.jpg)
+<!-- ![](https://github.com/YimianDai/open-sirst-v2/blob/master/gallery.jpg) -->
+
+![](./gallery.jpeg)
 
 Annotation formats available:
 
@@ -76,9 +88,20 @@ MPCM | 0.322 | [baidu](https://pan.baidu.com/s/12L8GqgLYRjCsCkzJJLdxEw?pwd=x698)
 NIPPS | 0.335 | [baidu](https://pan.baidu.com/s/1BGudl4V6mbQbefs0R5cYVA?pwd=kijt)
 RIPT | 0.293 | [baidu](https://pan.baidu.com/s/1pDTtXKVk-HCcViPjc1YXgA?pwd=avp2)
 
-## FAQ
 
 ## Acknowledgement
 
+Thanks MMDetection team for the wonderful open source project!
+
 ## Citation
 
+If you find DeepInfrared useful in your research, please consider citing this project.
+
+```tex
+@article{dai2022oscar,
+  title={One-Stage Cascade Refinement Networks for Infrared Small Target Detection},
+  author={Yimian Dai and Xiang Li and Fei Zhou and Yulei Qian and Yaohong Chen and Jian Yang},
+  journal={arXiv preprint},
+  year={2022}
+}
+```
