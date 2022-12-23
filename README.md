@@ -14,7 +14,7 @@ Single-frame InfraRed Small Target (SIRST) detection has been a challenging task
 
 ![](./abbr-arch.png)
 
-For details see [OSCAR](). The speed and accuracy are listed as follows:
+For details see [OSCAR](https://arxiv.org/abs/2212.08472). The speed and accuracy are listed as follows:
 
 ![](./oscar-tab.png)
 
